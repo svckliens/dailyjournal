@@ -8,7 +8,7 @@ include "koneksi.php";
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>svckliens.</title>
-    <link rel="icon" href="butterfly_head.jpg" />
+    <link rel="icon" href="produk/butterfly_head.jpg" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -65,7 +65,7 @@ include "koneksi.php";
   <section id="hero" class="text-center p-5 bg-dark" text-sm-start>
     <div class="container">
         <div class="d-sm-flex flex-sm-row-reverse align-items-center">
-            <img src="butterfly_head.jpg" class="img-fluid rounded-circle" width="500">
+            <img src="produk/butterfly_head.jpg" class="img-fluid rounded-circle" width="500">
             <div>
                 <h1 class="fw-bold display-4">ZERO PRESSURE.</h1>
                 <h4 class="lead display-6">greatness happens when you're focused on your flight path.</h4>
@@ -81,7 +81,7 @@ include "koneksi.php";
   <!-- article begin -->
 <section id="article" class="text-center p-5">
   <div class="container">
-    <h1 class="fw-bold display-4 pb-3">article</h1>
+    <h1 class="fw-bold display-4 pb-3">Article</h1>
     <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
       <?php
       $sql = "SELECT * FROM article ORDER BY tanggal DESC";
@@ -112,33 +112,181 @@ include "koneksi.php";
   </div>
 </section>
 <!-- article end -->
+<section id="JadwalKuliah" class="container my-5">
+        <H3 class="text-center fw-bold mb-5">Jadwal Kuliah & Kegiatan Mahasiswa</H3>
+        <div class="row row-cols-1 row-cols-md-4 g-4 justify-content">
+            <!-- Card 1 -->
+            <div class="col">
+                <div class="card h-100 bg-primary text-white">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Senin</h5>
+
+                    </div>
+                    <div class="card-footer bg-light">
+                        <h6 class="text-dark text-center">07:00 - 08:40</h6>
+                        <p class="text-dark text-center">
+                            Basis Data</p>
+                        <p class="text-dark text-center">Ruang H.3.4</p>
+                        <h6 class="text-dark text-center">12:30 - 14:10</h6>
+                        <p class="text-dark text-center">Technopreneurship</p>
+                        <p class="text-dark text-center">Kulino</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col">
+                <div class="card h-100 bg-success text-white">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Selasa</h5>
+
+                    </div>
+                    <div class="card-footer bg-light">
+                        <h6 class="text-dark text-center">08:00 - 09:30</h6>
+                        <p class="text-dark text-center">
+                            Pemrograman Berbasis Web</p>
+                        <p class="text-dark text-center">Ruang D.2.A</p>
+                        <h6 class="text-dark text-center">14:00 - 16:00</h6>
+                        <p class="text-dark text-center">Basis Data</p>
+                        <p class="text-dark text-center">Ruang D.3.M</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col">
+                <div class="card h-100 bg-danger text-white">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Rabu</h5>
+
+                    </div>
+                    <div class="card-footer bg-light">
+                        <h6 class="text-dark text-center">10:00 - 12:00</h6>
+                        <p class="text-dark text-center">
+                            Pemrograman Berbasis Objecj</p>
+                        <p class="text-dark text-center">Ruang D.2.A</p>
+                        <h6 class="text-dark text-center">13:30 - 15:00</h6>
+                        <p class="text-dark text-center">Pemrograman Sisi Server</p>
+                        <p class="text-dark text-center">Ruang D.2.A</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col">
+                <div class="card h-100 bg-warning text-white">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Kamis</h5>
+
+                    </div>
+                    <div class="card-footer bg-light">
+                        <h6 class="text-dark text-center">08:00 - 10:00</h6>
+                        <p class="text-dark text-center">
+                            Pengantar Teknologi Informasi</p>
+                        <p class="text-dark text-center">Ruang D.3.N</p>
+                        <h6 class="text-dark text-center">11:00 - 13:00</h6>
+                        <p class="text-dark text-center">Rapat Koordinasi HMTI</p>
+                        <p class="text-dark text-center">Ruang Rapat G.1</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col">
+                <div class="card h-100 bg-info text-white">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Jumat</h5>
+
+                    </div>
+                    <div class="card-footer bg-light">
+                        <h6 class="text-dark text-center">09:00 - 11:00</h6>
+                        <p class="text-dark text-center">
+                            Data mining</p>
+                        <p class="text-dark text-center">Ruang G.2.3</p>
+                        <h6 class="text-dark text-center">13:00 - 15:00</h6>
+                        <p class="text-dark text-center">Information Retrieval</p>
+                        <p class="text-dark text-center">Ruang G.2.4</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col">
+                <div class="card h-100 bg-dark-subtle text-white">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Sabtu</h5>
+
+                    </div>
+                    <div class="card-footer bg-light">
+                        <h6 class="text-dark text-center">08:00 - 10:00</h6>
+                        <p class="text-dark text-center">
+                            Bimbingan Karier</p>
+                        <p class="text-dark text-center">Online</p>
+                        <h6 class="text-dark text-center">10:30 - 12:00</h6>
+                        <p class="text-dark text-center">Bimbingan Skripsi</p>
+                        <p class="text-dark text-center">Online</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="col">
+                <div class="card h-100 bg-dark text-white">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Minggu</h5>
+
+                    </div>
+                    <div class="card-footer bg-light">
+                        <p class="text-dark text-center">Tidak ada jadwal</p>
+                        <h6>08:00 - 10:00</h6>
+                        <p>Online</p>
+                        <h6>10:30 - 12:00</h6>
+                        <p>Bimbingan Skripsi</p>
+                        <p>Online</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
   <!-- gallery begin -->
   <section id="gallery" class="text-center p-5 bg-dark">
-    <div class="container">
-      <h1 class="fw-bold display-4 pb-3">Gallery</h1>
-      <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="mathias-reding-NRX0VIQKMSI-unsplash.jpg" class="d-block w-50 mx-auto" width="100" height="auto">
-          </div>
-          <div class="carousel-item">
-            <img src="atul-pandey-TFQxG7quwto-unsplash.jpg" class="d-block w-50 mx-auto"  width="100" height="auto">
-          </div>
-          <div class="carousel-item">
-            <img src="alvaro-polo-wGolqRC2SFQ-unsplash.jpg" class="d-block w-50 mx-auto"  width="100" height="auto">
-          </div>
+  <div class="container">
+    <h1 class="fw-bold display-4 pb-3">Gallery</h1>
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <?php
+        $sql = "SELECT * FROM gallery ORDER BY tanggal DESC";
+        $hasil = $conn->query($sql);
+        $isActive = true; // Untuk menentukan slide pertama aktif
+        while ($row = $hasil->fetch_assoc()) {
+        ?>
+          <div class="carousel-item <?php if ($isActive) { echo 'active'; $isActive = false; } ?>">
+          <div class="d-flex justify-content-center">
+          <img src="produk/<?= $row["gambar"] ?>" class="img-fluid" style="max-height: 400px;" alt="Gambar Gallery">
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+            <div class="carousel-caption d-none d-md-block">
+              <h5><?= $row["judul"] ?></h5>
+              <p><?= $row["tanggal"] ?></p>
+            </div>
+          </div>
+        <?php
+        }
+        ?>
       </div>
+      <!-- Kontrol navigasi carousel -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-  </section>
+  </div>
+</section>
   <!-- gallery end -->
   <!-- footer begin -->
   <footer class="text-center p-3">
